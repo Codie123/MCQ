@@ -1,0 +1,10 @@
+.bg-img {
+  background: url(./assets/security.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg-II-img {
+  background: url(./assets/security-2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
