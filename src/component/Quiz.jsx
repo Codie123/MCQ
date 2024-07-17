@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import questionsData from "../data.json";
 import { useNavigate, useParams } from "react-router-dom";
 
@@ -17,7 +17,6 @@ const Quiz = () => {
     setSelectedOption(option);
   };
 
-  const container = useRef();
   const handleSubmit = (e) => {
     e.preventDefault();
     setDisabled(true);

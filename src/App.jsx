@@ -1,5 +1,3 @@
-import { useState } from "react";
-
 import "./App.css";
 import Quiz from "./component/Quiz";
 
@@ -18,8 +16,6 @@ function App() {
         <Route path="/arabic" element={<ArabicQuiz />} />
 
         <Route path="/quiz/:id" element={<Quiz />} />
-
-        {/* <Route path="/arabic" component={ArabicQuiz} /> */}
       </Routes>
     </Router>
   );

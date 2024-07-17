@@ -1,4 +1,3 @@
-import React from "react";
 import questionsData from "../data.json";
 import { Link } from "react-router-dom";
 
