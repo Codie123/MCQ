@@ -7,18 +7,18 @@ const Home = () => {
   };
 
   return (
-    <main className="container h-screen flex flex-col items-center justify-center bg-black text-white font-slabo">
+    <main className=" h-screen flex flex-col items-center justify-center bg-black text-white font-slabo">
       <div className="bg-img w-screen h-screen flex items-end justify-around pb-20">
         <Link
           to="/english"
-          className="backdrop-blur-xl bg-darkBlue/60  rounded-lg font-light text-3xl text-white cursor-pointer p-4   hover:bg-darkBlue/30"
+          className="backdrop-blur-xl bg-white  rounded-lg font-light text-3xl text-black cursor-pointer p-4   hover:bg-white/30"
           onClick={() => handleClick("english")}
         >
           English
         </Link>
         <Link
           to="/arabic"
-          className="backdrop-blur-xl bg-darkBlue/60 rounded-lg font-light text-3xl text-white cursor-pointer p-4   hover:bg-darkBlue/30"
+          className="backdrop-blur-xl bg-white rounded-lg font-light text-3xl text-black cursor-pointer p-4   hover:bg-white/30"
           onClick={() => handleClick("arabic")}
         >
           عربي
