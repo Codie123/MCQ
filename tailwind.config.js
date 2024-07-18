@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         slabo: ["Slabo+27px"],
+        rubik: ["Rubik"],
       },
       backgroundColor: {
         darkBlue: "#2b3968",
@@ -17,6 +18,9 @@ export default {
         darkBlue: "#2b3968",
       },
       textColor: {
+        darkBlue: "#2b3968",
+      },
+      colors: {
         darkBlue: "#2b3968",
       },
     },

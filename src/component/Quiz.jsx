@@ -52,9 +52,9 @@ const Quiz = () => {
         dir={language === "arabic" ? "rtl" : "ltr"}
       >
         {language !== "arabic" ? (
-          <div className="container flex flex-col w-fit justify-center items-stretch p-10 rounded-2xl backdrop-blur-xl bg-white/30  shadow-2xl text-black">
+          <div className="container flex flex-col gap-8 max-w-screen-md justify-center items-stretch p-10 rounded-2xl backdrop-blur-2xl bg-white/30  shadow-2xl text-white">
             <div className="question">
-              <h1 className="text-4xl font-bold ">
+              <h1 className="text-4xl font-semibold ">
                 {questionById.question_en}
               </h1>
             </div>
@@ -86,7 +86,7 @@ const Quiz = () => {
                       />
                       <label
                         htmlFor={`option-${index}`}
-                        className={`w-full py-4 ms-2 text-xl font-medium ${
+                        className={`w-full py-4 ms-2 text-xl text-white font-light ${
                           selectedOption === x &&
                           disabled &&
                           correctAnswer === x
@@ -116,11 +116,12 @@ const Quiz = () => {
             </div>
           </div>
         ) : (
-          <div className="container flex flex-col max-w-xl justify-center items-stretch p-10 rounded-2xl backdrop-blur-xl bg-white/30  shadow-2xl text-black">
+          <div className="container font-rubik flex flex-col gap-8 max-w-screen-md justify-center items-stretch p-10 rounded-2xl backdrop-blur-2xl bg-white/30  shadow-2xl text-white">
             <div className="question">
-              <h1 className="text-4xl font-bold">{questionById.question_ar}</h1>
+              <h1 className="text-4xl font-normal">
+                {questionById.question_ar}
+              </h1>
             </div>
-
             <div className="answer-container mt-4 ">
               <form onSubmit={handleSubmit} className="flex flex-col gap-4">
                 {questionById.options_ar.map((x, index) => (
@@ -148,7 +149,7 @@ const Quiz = () => {
                       />
                       <label
                         htmlFor={`option-${index}`}
-                        className={`w-full py-4 ms-2 text-xl font-medium ${
+                        className={`w-full py-4 ms-2 text-xl text-white font-light ${
                           selectedOption === x &&
                           disabled &&
                           correctAnswer === x

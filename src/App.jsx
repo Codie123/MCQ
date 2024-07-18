@@ -4,7 +4,7 @@ import Quiz from "./component/Quiz";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./component/Home";
 import EnglishQuiz from "./component/EnglishQuiz";
-import ArabicQuiz from "./component/ArabicQuiz copy";
+import ArabicQuiz from "./component/ArabicQuiz";
 
 function App() {
   return (

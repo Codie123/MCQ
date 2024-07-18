@@ -4,11 +4,29 @@
   background-size: cover;
 }
 .bg-II-img {
-  background: url(./assets/security-2.jpg);
+  background: url(./assets/Security2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+/* .wrapper::before {
+  content: "";
+  display: flex;
+  width: 16%;
+  height: 30%;
+  position: absolute;
+  top: 0;
+  right: 3%;
+  background: floralwhite;
+  justify-content: center;
+  align-items: center;
+  color: darkblue;
+  background-image: url(https://www.jhah.com/dist/assets/img/jhah-logo.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+} */
 /* custom tick animation */
 svg {
   width: 100%;
