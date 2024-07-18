@@ -86,7 +86,7 @@ const Quiz = () => {
                       />
                       <label
                         htmlFor={`option-${index}`}
-                        className={`w-full py-4 ms-2 text-xl text-white font-light ${
+                        className={`w-full py-4 ms-2 text-xl text-white font-light cursor-pointer ${
                           selectedOption === x &&
                           disabled &&
                           correctAnswer === x
@@ -127,7 +127,7 @@ const Quiz = () => {
                 {questionById.options_ar.map((x, index) => (
                   <div key={index}>
                     <div
-                      className={`flex items-center ps-4 border border-gray-200 rounded dark:border-gray-700 ${
+                      className={`flex items-center ps-4 border border-gray-200 rounded dark:border-gray-700  ${
                         selectedOption === x && disabled && correctAnswer === x
                           ? "bg-success text-white"
                           : ""
@@ -149,7 +149,7 @@ const Quiz = () => {
                       />
                       <label
                         htmlFor={`option-${index}`}
-                        className={`w-full py-4 ms-2 text-xl text-white font-light ${
+                        className={`w-full py-4 ms-2 text-xl text-white font-light cursor-pointer ${
                           selectedOption === x &&
                           disabled &&
                           correctAnswer === x

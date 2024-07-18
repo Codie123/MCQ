@@ -2,7 +2,7 @@
   "questions": [
     {
       "id": "Question 1",
-      "id_ar": "السؤال رقم 1",
+      "id_ar": "السؤال رقم ١",
       "question_en": "On which date is International Security Officers Day celebrated?",
       "question_ar": "في أي يوم يتم الاحتفال باليوم العالمي لضباط الأمن؟",
       "optionsen": [
@@ -11,18 +11,13 @@
         "23rd of July",
         "22nd of July"
       ],
-      "options_ar": [
-        "أ) 21 يوليو",
-        "ب) 24 يوليو",
-        "ج) 23 يوليو",
-        "د) 22 يوليو"
-      ],
+      "options_ar": ["21 يوليو", "24 يوليو", "23 يوليو", "22 يوليو"],
       "answer_en": "24th of July",
-      "answer_ar": "ب) 24 يوليو"
+      "answer_ar": "24 يوليو"
     },
     {
       "id": "Question 2",
-      "id_ar": "السؤال رقم 2",
+      "id_ar": "السؤال رقم ٢",
       "question_en": "What is the PRIMARY responsibility of a security officer?",
       "question_ar": "ما هي المسؤولية الأساسية لضابط الأمن؟",
       "optionsen": [
@@ -32,17 +27,17 @@
         "All of the above"
       ],
       "options_ar": [
-        "أ) إصدار مخالفات للمخالفين في مباني مركز جونز هوبكنز أرامكو الطبي",
-        "ب) الحفاظ على بيئة آمنة ومأمونة",
-        "ج) مراقبة كاميرات المراقبة",
-        "د. كل ما ورد اعلاه"
+        "إصدار مخالفات للمخالفين في مباني مركز جونز هوبكنز أرامكو الطبي",
+        "الحفاظ على بيئة آمنة ومأمونة",
+        "مراقبة كاميرات المراقبة",
+        "كل ما ورد اعلاه"
       ],
       "answer_en": "Maintaining a safe and secure environment",
-      "answer_ar": "ب) الحفاظ على بيئة آمنة ومأمونة"
+      "answer_ar": "الحفاظ على بيئة آمنة ومأمونة"
     },
     {
       "id": "Question 3",
-      "id_ar": "السؤال رقم 3",
+      "id_ar": "السؤال رقم ٣",
       "question_en": "What is one key advantage of using CCTV systems?",
       "question_ar": "ما هي الميزة الرئيسية لاستخدام أنظمة المراقبة بالكاميرات ؟",
       "optionsen": [
@@ -52,17 +47,17 @@
         "They require no maintenance"
       ],
       "options_ar": [
-        "أ) الاستغناء عن الحاجة إلى رجال الأمن",
-        "ب) تزود رجال الأمن بالمراقبة الحية والأدلة المسجلة",
-        "ج) يتم استخدامها في المقام الأول للترفيه",
-        "د) لا تحتاج إلى صيانة"
+        "الاستغناء عن الحاجة إلى رجال الأمن",
+        "تزود رجال الأمن بالمراقبة الحية والأدلة المسجلة",
+        "يتم استخدامها في المقام الأول للترفيه",
+        "لا تحتاج إلى صيانة"
       ],
       "answer_en": "They provide real-time monitoring and recorded evidence",
-      "answer_ar": "ب) تزود رجال الأمن بالمراقبة الحية والأدلة المسجلة"
+      "answer_ar": "تزود رجال الأمن بالمراقبة الحية والأدلة المسجلة"
     },
     {
       "id": "Question 4",
-      "id_ar": "السؤال رقم 4",
+      "id_ar": "السؤال رقم ٤",
       "question_en": "What is the primary purpose of a security foot patrol?",
       "question_ar": "ما هو الغرض الأساسي من الدورية الأمنية ؟",
       "optionsen": [
@@ -72,17 +67,17 @@
         "To supervise maintenance staff"
       ],
       "options_ar": [
-        "أ) ممارسة الرياضة",
-        "ب) التفاعل مع الجمهور",
-        "ج) ردع وكشف الأنشطة المشبوهة",
-        "د) الإشراف على موظفي الصيانة"
+        "ممارسة الرياضة",
+        "التفاعل مع الجمهور",
+        "ردع وكشف الأنشطة المشبوهة",
+        "الإشراف على موظفي الصيانة"
       ],
       "answer_en": "To deter and detect suspicious activities",
-      "answer_ar": "ج) ردع وكشف الأنشطة المشبوهة"
+      "answer_ar": "ردع وكشف الأنشطة المشبوهة"
     },
     {
       "id": "Question 5",
-      "id_ar": "السؤال رقم 5",
+      "id_ar": "السؤال رقم ٥",
       "question_en": "How many designated smoking areas are within the JHAH premises?",
       "question_ar": "ما هو عدد المناطق المخصصة للتدخين الموجودة داخل مباني مركز جونز هوبكنز أرامكو الطبي؟",
       "optionsen": [
@@ -92,32 +87,32 @@
         "Five designated smoking areas"
       ],
       "options_ar": [
-        "أ) ستة مناطق مخصصة للتدخين",
-        "ب) منطقتان مخصصتان للتدخين",
-        "ج) ثلاث مناطق مخصصة للتدخين",
-        "د) خمس مناطق مخصصة للتدخين"
+        "ستة مناطق مخصصة للتدخين",
+        "منطقتان مخصصتان للتدخين",
+        "ثلاث مناطق مخصصة للتدخين",
+        "خمس مناطق مخصصة للتدخين"
       ],
       "answer_en": "Six designated smoking areas",
-      "answer_ar": "أ) ستة مناطق مخصصة للتدخين"
+      "answer_ar": "ستة مناطق مخصصة للتدخين"
     },
     {
       "id": "Question 6",
-      "id_ar": "السؤال رقم 6",
+      "id_ar": "السؤال رقم ٦",
       "question_en": "Who is responsible for reporting safety hazards within the JHAH hospital?",
       "question_ar": "من المسؤول عن الإبلاغ عن مخاطر السلامة داخل مركز جونز هوبكنز أرامكو الطبي ؟",
       "optionsen": ["Security", "Patient", "Visitor", "All JHAH staff"],
       "options_ar": [
-        "أ) الأمن",
-        "ب) المريض",
-        "ج) الزوار",
-        "د) جميع موظفي مركز جونز هوبكنز أرامكو الطبي"
+        "الأمن",
+        "المريض",
+        "الزوار",
+        " جميع موظفي مركز جونز هوبكنز أرامكو الطبي"
       ],
       "answer_en": "All JHAH staff",
-      "answer_ar": "د) جميع موظفي مركز جونز هوبكنز أرامكو الطبي"
+      "answer_ar": "جميع موظفي مركز جونز هوبكنز أرامكو الطبي"
     },
     {
       "id": "Question 7",
-      "id_ar": "السؤال رقم 7",
+      "id_ar": "السؤال رقم ٧",
       "question_en": "JHAH staff are not allowed to park in?",
       "question_ar": "لا يُسمح لموظفي مركز جونز هوبكنز أرامكو الطبي بركن سياراتهم؟",
       "optionsen": [
@@ -127,83 +122,83 @@
         "B and C"
       ],
       "options_ar": [
-        "أ) مواقف الموظفين",
-        "ب) مواقف المرضى",
-        "ج) وقوف السيارات غير المصرح به",
-        "د) )ب( و )ج("
+        "مواقف الموظفين",
+        "مواقف المرضى",
+        "وقوف السيارات غير المصرح به",
+        "ب و ج"
       ],
       "answer_en": "B and C",
-      "answer_ar": "د) )ب( و )ج("
+      "answer_ar": "ب و ج"
     },
     {
       "id": "Question 8",
-      "id_ar": "السؤال رقم 8",
+      "id_ar": "السؤال رقم ٨",
       "question_en": "All JHAH staff are required to wear JHAH ID at all times while on duty?",
       "question_ar": "هل يتعين على جميع موظفي المستشفى ارتداء بطاقة مركز جونز هوبكنز أرامكو الطبي في جميع الأوقات أثناء العمل؟",
       "optionsen": ["True", "False"],
-      "options_ar": ["أ ) صح", "ب) خطأ"],
+      "options_ar": ["صح", "خطأ"],
       "answer_en": "True",
-      "answer_ar": "أ ) صح"
+      "answer_ar": "صح"
     },
     {
       "id": "Question 9",
-      "id_ar": "السؤال رقم 9",
+      "id_ar": "السؤال رقم ٩",
       "question_en": "You are allowed to take photos or record videos on the JHAH premises without security permission?",
       "question_ar": "يسمح لك بالتقاط الصور أو تسجيل مقاطع الفيديو في مقر مركز جونز هوبكنز أرامكو الطبي دون الحصول على إذن أمني؟",
       "optionsen": ["True", "False"],
-      "options_ar": ["أ ) صح", "ب) خطأ"],
+      "options_ar": ["صح", "خطأ"],
       "answer_en": "False",
-      "answer_ar": "ب) خطأ"
+      "answer_ar": "خطأ"
     },
     {
       "id": "Question 10",
-      "id_ar": "السؤال رقم 10",
+      "id_ar": "السؤال رقم ١٠",
       "question_en": "Smoking is allowed on the JHAH premises?",
       "question_ar": "يُسمح بالتدخين في مقر مركز جونز هوبكنز أرامكو الطبي ؟",
       "optionsen": ["True", "False"],
-      "options_ar": ["أ ) صح", "ب) خطأ"],
+      "options_ar": ["صح", " خطأ"],
       "answer_en": "False",
-      "answer_ar": "ب) خطأ"
+      "answer_ar": " خطأ"
     },
     {
       "id": "Question 11",
-      "id_ar": "السؤال رقم 11",
+      "id_ar": "السؤال رقم ١١",
       "question_en": "Security officers have the authority to issue parking violations for vehicles in unauthorized areas?",
       "question_ar": "يحق لرجال الأمن إصدار مخالفات  لوقوف المركبات في المناطق غير المسموح بها؟",
       "optionsen": ["True", "False"],
-      "options_ar": ["أ ) صح", "ب) خطأ"],
+      "options_ar": ["صح", " خطأ"],
       "answer_en": "True",
-      "answer_ar": "أ ) صح"
+      "answer_ar": " صح"
     },
     {
       "id": "Question 12",
-      "id_ar": "السؤال رقم 12",
+      "id_ar": "السؤال رقم ١٢",
       "question_en": "Emergency exits should be kept locked at all times to prevent unauthorized access?",
       "question_ar": " يجب أن تظل مخارج الطوارئ مغلقة في جميع الأوقات لمنع دخول غير المصرح به؟",
       "optionsen": ["True", "False"],
-      "options_ar": ["أ ) صح", "ب) خطأ"],
+      "options_ar": ["صح", " خطأ"],
       "answer_en": "False",
-      "answer_ar": "ب) خطأ"
+      "answer_ar": "خطأ"
     },
     {
       "id": "Question 13",
-      "id_ar": "السؤال رقم 13",
+      "id_ar": "السؤال رقم ١٣",
       "question_en": "It is acceptable for staff to share their JHAH ID with colleagues?",
       "question_ar": "من المقبول أن يقوم الموظفون بمشاركة بطاقة مركز جونز هوبكنز أرامكو الطبي الخاصة بهم مع زملائهم؟",
       "optionsen": ["True", "False"],
-      "options_ar": ["أ ) صح", "ب) خطأ"],
+      "options_ar": ["صح", " خطأ"],
       "answer_en": "False",
-      "answer_ar": "ب) خطأ"
+      "answer_ar": "خطأ"
     },
     {
       "id": "Question 14",
-      "id_ar": "السؤال رقم 14",
+      "id_ar": "السؤال رقم ١٤",
       "question_en": "Staff must immediately report any lost or stolen JHAH ID to the security?",
       "question_ar": "يجب على الموظفين الإبلاغ فورًا عن أي بطاقة مركز جونز هوبكنز أرامكو الطبي مفقودة أو مسروقة إلى الأمن؟",
       "optionsen": ["True", "False"],
-      "options_ar": ["أ ) صح", "ب) خطأ"],
+      "options_ar": ["صح", "خطأ"],
       "answer_en": "True",
-      "answer_ar": "أ ) صح"
+      "answer_ar": "صح"
     }
   ]
 }

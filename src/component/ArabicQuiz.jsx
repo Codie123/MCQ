@@ -18,7 +18,7 @@ const ArabicQuiz = () => {
                 key={index}
                 className="h-fit p-3 rounded-lg w-full backdrop-blur-xl text-xl font-medium text-gray-900 focus:outline-none bg-white  border border-gray-200 hover:bg-gray-200 hover:text-darkBlue focus:z-10 focus:ring-4 focus:ring-darkBlue  shadow-2xl "
               >
-                <div className="question text-2xl font-bold">
+                <div className="question text-2xl font-medium">
                   {question.id_ar}
                 </div>
               </button>
