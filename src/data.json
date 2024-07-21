@@ -119,13 +119,13 @@
         "Staff Parking",
         "Patient parking",
         "Unauthorized parking",
-        "B and C"
+        "A,B and C"
       ],
       "options_ar": [
         "مواقف الموظفين",
         "مواقف المرضى",
         "وقوف السيارات غير المصرح به",
-        "ب و ج"
+        "أ، ب، ج"
       ],
       "answer_en": "B and C",
       "answer_ar": "ب و ج"
