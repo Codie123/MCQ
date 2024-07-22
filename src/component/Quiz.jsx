@@ -54,7 +54,7 @@ const Quiz = () => {
         {language !== "arabic" ? (
           <div className="container flex flex-col gap-8 max-w-screen-md justify-center items-stretch p-10 rounded-2xl backdrop-blur-2xl bg-white/30  shadow-2xl text-white">
             <div className="question">
-              <h1 className="text-4xl font-semibold ">
+              <h1 className="text-6xl font-semibold ">
                 {questionById.question_en}
               </h1>
             </div>
@@ -86,7 +86,7 @@ const Quiz = () => {
                       />
                       <label
                         htmlFor={`option-${index}`}
-                        className={`w-full py-4 ms-2 text-xl text-white font-light cursor-pointer ${
+                        className={`w-full py-4 ms-2 text-5xl text-white font-light cursor-pointer ${
                           selectedOption === x &&
                           disabled &&
                           correctAnswer === x
@@ -107,7 +107,7 @@ const Quiz = () => {
                 ))}
                 <button
                   type="submit"
-                  className="mt-8 px-6 py-3.5 text-base font-medium text-white bg-slate-950 hover:bg-slate-800 disabled:cursor-not-allowed disabled:bg-slate-800 focus:outline-none   rounded-lg text-center  "
+                  className="mt-8 px-6 py-3.5 text-4xl font-medium text-white bg-slate-950 hover:bg-slate-800 disabled:cursor-not-allowed disabled:bg-slate-800 focus:outline-none   rounded-lg text-center  "
                   disabled={disabled}
                 >
                   Submit
