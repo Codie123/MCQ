@@ -34,15 +34,15 @@ const Quiz = () => {
     if (isCorrect) {
       setMessage("Correct! Well done.");
       setMessageType("success");
-      // setTimeout(() => {
-      //   navigate("/");
-      // }, 1500);
+      setTimeout(() => {
+        navigate("/");
+      }, 1500);
     } else {
       setMessage("Incorrect! Try again.");
       setMessageType("error");
-      // setTimeout(() => {
-      //   navigate("/");
-      // }, 1500);
+      setTimeout(() => {
+        navigate("/");
+      }, 1500);
     }
   };
 
