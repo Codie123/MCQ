@@ -11,14 +11,14 @@ const Home = () => {
       <div className="bg-img w-screen h-screen flex items-end justify-around pb-20">
         <Link
           to="/english"
-          className="backdrop-blur-xl bg-white  rounded-lg font-light text-3xl text-black cursor-pointer p-4   hover:bg-white/30"
+          className="backdrop-blur-xl bg-white  rounded-lg font-light text-9xl text-black cursor-pointer p-4   hover:bg-white/30"
           onClick={() => handleClick("english")}
         >
           English
         </Link>
         <Link
           to="/arabic"
-          className="backdrop-blur-xl bg-white rounded-lg font-light text-3xl text-black cursor-pointer p-4   hover:bg-white/30"
+          className="backdrop-blur-xl bg-white rounded-lg font-light text-9xl text-black cursor-pointer p-4   hover:bg-white/30"
           onClick={() => handleClick("arabic")}
         >
           عربي
