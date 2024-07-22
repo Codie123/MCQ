@@ -13,6 +13,7 @@ const Quiz = () => {
   const language = localStorage.getItem("lng");
 
   const navigate = useNavigate();
+
   const handleOptionChange = (option) => {
     setSelectedOption(option);
   };
@@ -33,15 +34,15 @@ const Quiz = () => {
     if (isCorrect) {
       setMessage("Correct! Well done.");
       setMessageType("success");
-      setTimeout(() => {
-        navigate("/");
-      }, 1500);
+      // setTimeout(() => {
+      //   navigate("/");
+      // }, 1500);
     } else {
       setMessage("Incorrect! Try again.");
       setMessageType("error");
-      setTimeout(() => {
-        navigate("/");
-      }, 1500);
+      // setTimeout(() => {
+      //   navigate("/");
+      // }, 1500);
     }
   };
 
@@ -52,28 +53,18 @@ const Quiz = () => {
         dir={language === "arabic" ? "rtl" : "ltr"}
       >
         {language !== "arabic" ? (
-          <div className="container flex flex-col gap-8 max-w-screen-md justify-center items-stretch p-10 rounded-2xl backdrop-blur-2xl bg-white/30  shadow-2xl text-white">
+          <div className="container flex flex-col gap-16 max-w-screen-3xl justify-center items-stretch p-10 rounded-2xl backdrop-blur-2xl bg-white/30  shadow-2xl text-white">
             <div className="question">
-              <h1 className="text-6xl font-semibold ">
+              <h1 className="text-8xl font-semibold leading-relaxed ">
                 {questionById.question_en}
               </h1>
             </div>
 
             <div className="answer-container mt-4 ">
-              <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+              <form onSubmit={handleSubmit} className="flex flex-col gap-8">
                 {questionById.optionsen.map((x, index) => (
                   <div key={index}>
-                    <div
-                      className={`flex items-center ps-4 border border-gray-200 rounded dark:border-gray-700 ${
-                        selectedOption === x && disabled && correctAnswer === x
-                          ? "bg-success border-color-transparent text-white"
-                          : ""
-                      } ${
-                        selectedOption === x && disabled && correctAnswer !== x
-                          ? "bg-error text-white"
-                          : ""
-                      }`}
-                    >
+                    <div className={`flex items-center ps-4 `}>
                       <input
                         name={`option-${id}`}
                         id={`option-${index}`}
@@ -82,32 +73,38 @@ const Quiz = () => {
                         value={x}
                         onChange={() => handleOptionChange(x)}
                         required
-                        className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300  dark:focus:ring-blue-600  dark:bg-gray-700 dark:border-gray-600"
+                        className="hidden peer"
                       />
                       <label
                         htmlFor={`option-${index}`}
-                        className={`w-full py-4 ms-2 text-5xl text-white font-light cursor-pointer ${
-                          selectedOption === x &&
-                          disabled &&
-                          correctAnswer === x
-                            ? " text-white"
-                            : "text-gray-900"
-                        } ${
-                          selectedOption === x &&
-                          disabled &&
-                          correctAnswer !== x
-                            ? " text-white"
-                            : "text-gray-900"
-                        } `}
+                        className={`
+                           w-full
+                           tracking-normal
+                            py-8 px-8 ms-2
+                             text-7xl
+                              text-black
+                               font-thin
+                                cursor-pointer 
+                                border-2 
+                                border-gray-950  
+                                rounded-lg 
+                                bg-white 
+                                peer-checked:border-transparent
+                                peer-checked:text-white
+                                peer-checked:bg-cyan_cuz
+                                hover:text-black 
+                                hover:bg-cyan_cuz 
+                         `}
                       >
                         {x}
                       </label>
                     </div>
                   </div>
                 ))}
+
                 <button
                   type="submit"
-                  className="mt-8 px-6 py-3.5 text-4xl font-medium text-white bg-slate-950 hover:bg-slate-800 disabled:cursor-not-allowed disabled:bg-slate-800 focus:outline-none   rounded-lg text-center  "
+                  className="mt-16 px-8 py-8 uppercase  text-7xl font-medium text-white bg-slate-950 hover:bg-slate-800 disabled:cursor-not-allowed disabled:bg-slate-800 focus:outline   rounded-lg text-center  "
                   disabled={disabled}
                 >
                   Submit
@@ -116,18 +113,18 @@ const Quiz = () => {
             </div>
           </div>
         ) : (
-          <div className="container font-rubik flex flex-col gap-8 max-w-screen-md justify-center items-stretch p-10 rounded-2xl backdrop-blur-2xl bg-white/30  shadow-2xl text-white">
+          <div className="container flex flex-col gap-16 max-w-screen-3xl justify-center items-stretch p-10 rounded-2xl backdrop-blur-2xl bg-white/30  shadow-2xl text-white">
             <div className="question">
-              <h1 className="text-4xl font-normal">
+              <h1 className="text-8xl font-semibold leading-relaxed">
                 {questionById.question_ar}
               </h1>
             </div>
             <div className="answer-container mt-4 ">
-              <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+              <form onSubmit={handleSubmit} className="flex flex-col gap-8">
                 {questionById.options_ar.map((x, index) => (
                   <div key={index}>
                     <div
-                      className={`flex items-center ps-4 border border-gray-200 rounded dark:border-gray-700  ${
+                      className={`flex items-center ps-4  ${
                         selectedOption === x && disabled && correctAnswer === x
                           ? "bg-success text-white"
                           : ""
@@ -140,28 +137,33 @@ const Quiz = () => {
                       <input
                         name={`option-${id}`}
                         id={`option-${index}`}
+                        disabled={disabled}
                         type="radio"
                         value={x}
-                        required
-                        disabled={disabled}
                         onChange={() => handleOptionChange(x)}
-                        className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300  dark:focus:ring-blue-600 dark:ring-offset-gray-800  dark:bg-gray-700 dark:border-gray-600"
+                        required
+                        className="hidden peer"
                       />
                       <label
                         htmlFor={`option-${index}`}
-                        className={`w-full py-4 ms-2 text-xl text-white font-light cursor-pointer ${
-                          selectedOption === x &&
-                          disabled &&
-                          correctAnswer === x
-                            ? " text-white"
-                            : "text-gray-900"
-                        } ${
-                          selectedOption === x &&
-                          disabled &&
-                          correctAnswer !== x
-                            ? " text-white"
-                            : "text-gray-900"
-                        } `}
+                        className={`
+                           w-full
+                           tracking-normal
+                            py-8 px-8 ms-2
+                             text-7xl
+                              text-black
+                               font-thin
+                                cursor-pointer 
+                                border-2
+                                border-gray-950
+                                rounded-lg
+                                bg-white 
+                                peer-checked:border-transparent
+                                peer-checked:text-white
+                                peer-checked:bg-cyan_cuz
+                                hover:text-black 
+                                hover:bg-cyan_cuz 
+                        `}
                       >
                         {x}
                       </label>
@@ -170,7 +172,7 @@ const Quiz = () => {
                 ))}
                 <button
                   type="submit"
-                  className="mt-8 px-6 py-3.5 text-base font-medium text-white bg-slate-950 hover:bg-slate-800 disabled:cursor-not-allowed disabled:bg-slate-800 focus:outline-none   rounded-lg text-center  "
+                  className="mt-16 px-8 py-8 uppercase  text-7xl font-medium text-white bg-slate-950 hover:bg-slate-800 disabled:cursor-not-allowed disabled:bg-slate-800 focus:outline   rounded-lg text-center   "
                   disabled={disabled}
                 >
                   Submit
@@ -203,8 +205,8 @@ const Quiz = () => {
                     fill-opacity="0"
                     stroke-miterlimit="10"
                     d="M150,47.9c18.4,0,35.4,4.6,51,13.8s28,21.6,37.2,37.2s13.8,32.6,13.8,51s-4.6,35.4-13.8,51s-21.6,28-37.2,37.2
-s-32.6,13.8-51,13.8s-35.4-4.6-51-13.8s-28-21.6-37.2-37.2s-13.8-32.6-13.8-51s4.6-35.4,13.8-51s21.6-28,37.2-37.2
-S131.7,47.9,150,47.9z M150,238.7c16.2,0,31-4,"
+                      s-32.6,13.8-51,13.8s-35.4-4.6-51-13.8s-28-21.6-37.2-37.2s-13.8-32.6-13.8-51s4.6-35.4,13.8-51s21.6-28,37.2-37.2
+                      S131.7,47.9,150,47.9z M150,238.7c16.2,0,31-4,"
                   />
 
                   <path
@@ -217,7 +219,7 @@ S131.7,47.9,150,47.9z M150,238.7c16.2,0,31-4,"
                     stroke=""
                     stroke-width="10"
                     d="M208.4,118.6c0.8-0.8,1.2-1.9,1.2-3.3c0-1.4-0.4-2.6-1.2-3.7l-3.7-3.3c-0.8-1.1-1.9-1.6-3.3-1.6
-s-2.6,0.4-3.7,1.2l-67,67l-28.4-28.8c-1.1-0.8-2.3-1.2-3.7-1.2c-1.4,0-2.5,0.4-3.3,1.2l-3.7,3.3c-0.8,1.1-1.2,2.3-1.2,3.7
+                s-2.6,0.4-3.7,1.2l-67,67l-28.4-28.8c-1.1-0.8-2.3-1.2-3.7-1.2c-1.4,0-2.5,0.4-3.3,1.2l-3.7,3.3c-0.8,1.1-1.2,2.3-1.2,3.7
 s0.4,2.5,1.2,3.3l35.4,35.8c1.1,1.1,2.3,1.6,3.7,1.6c1.4,0,2.5-0.5,3.3-1.6L208.4,118.6z"
                   />
                 </svg>
