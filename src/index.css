@@ -4,6 +4,15 @@
 @tailwind components;
 @tailwind utilities;
 
+html,
+body {
+  -webkit-touch-callout: none; /* Prevent callout to copy image, etc when touch hold */
+  -webkit-user-select: none; /* Prevent copy paste, to allow, change 'none' to 'text' */
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 body {
   font-family: "Slabo 27px", serif;
   font-weight: 400;

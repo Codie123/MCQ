@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { React, useState } from "react";
 import questionsData from "../data.json";
 import { useNavigate, useParams } from "react-router-dom";
 
@@ -45,10 +45,13 @@ const Quiz = () => {
       }, 1500);
     }
   };
-
+  const handleRightClick = (e) => {
+    e.preventDefault();
+  };
   return (
     <>
       <div
+        onContextMenu={handleRightClick}
         className="wrapper bg-II-img w-screen h-screen flex flex-col justify-center items-center "
         dir={language === "arabic" ? "rtl" : "ltr"}
       >
@@ -194,30 +197,30 @@ const Quiz = () => {
                   version="1.1"
                   id="Layer_1"
                   xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
-                  xml:space="preserve"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
+                  xmlSpace="preserve"
                 >
                   <path
-                    class="circle"
+                    className="circle"
                     stroke="#1C9943"
-                    stroke-width="10"
+                    strokeWidth="10"
                     fill="#fff"
-                    fill-opacity="0"
-                    stroke-miterlimit="10"
+                    fillOpacity="0"
+                    strokeMiterlimit="10"
                     d="M150,47.9c18.4,0,35.4,4.6,51,13.8s28,21.6,37.2,37.2s13.8,32.6,13.8,51s-4.6,35.4-13.8,51s-21.6,28-37.2,37.2
                       s-32.6,13.8-51,13.8s-35.4-4.6-51-13.8s-28-21.6-37.2-37.2s-13.8-32.6-13.8-51s4.6-35.4,13.8-51s21.6-28,37.2-37.2
                       S131.7,47.9,150,47.9z M150,238.7c16.2,0,31-4,"
                   />
 
                   <path
-                    class="tick"
+                    className="tick"
                     cx="0"
                     cy="0"
                     r="1"
                     opacity="1"
                     fill="#1C9943"
                     stroke=""
-                    stroke-width="10"
+                    strokeWidth="10"
                     d="M208.4,118.6c0.8-0.8,1.2-1.9,1.2-3.3c0-1.4-0.4-2.6-1.2-3.7l-3.7-3.3c-0.8-1.1-1.9-1.6-3.3-1.6
                 s-2.6,0.4-3.7,1.2l-67,67l-28.4-28.8c-1.1-0.8-2.3-1.2-3.7-1.2c-1.4,0-2.5,0.4-3.3,1.2l-3.7,3.3c-0.8,1.1-1.2,2.3-1.2,3.7
 s0.4,2.5,1.2,3.3l35.4,35.8c1.1,1.1,2.3,1.6,3.7,1.6c1.4,0,2.5-0.5,3.3-1.6L208.4,118.6z"
@@ -230,34 +233,34 @@ s0.4,2.5,1.2,3.3l35.4,35.8c1.1,1.1,2.3,1.6,3.7,1.6c1.4,0,2.5-0.5,3.3-1.6L208.4,1
                   viewBox="0 0 130.2 130.2"
                 >
                   <circle
-                    class="path circle"
+                    className="path circle"
                     fill="none"
                     stroke="#D06079"
-                    stroke-width="6"
-                    stroke-miterlimit="10"
+                    strokeWidth="6"
+                    strokeMiterlimit="10"
                     cx="65.1"
                     cy="65.1"
                     r="62.1"
                   />
                   <line
-                    class="path line"
+                    className="path line"
                     fill="none"
                     stroke="#D06079"
-                    stroke-width="6"
-                    stroke-linecap="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                    strokeMiterlimit="10"
                     x1="34.4"
                     y1="37.9"
                     x2="95.8"
                     y2="92.3"
                   />
                   <line
-                    class="path line"
+                    className="path line"
                     fill="none"
                     stroke="#D06079"
-                    stroke-width="6"
-                    stroke-linecap="round"
-                    stroke-miterlimit="10"
+                    strokeWidth="6"
+                    strokeLinecap="round"
+                    strokeMiterlimit="10"
                     x1="95.8"
                     y1="38"
                     x2="34.4"

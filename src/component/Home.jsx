@@ -5,9 +5,15 @@ const Home = () => {
     console.log(lng);
     localStorage.setItem("lng", lng);
   };
+  const handleRightClick = (e) => {
+    e.preventDefault();
+  };
 
   return (
-    <main className=" h-screen flex flex-col items-center justify-center bg-black text-white font-slabo">
+    <main
+      onContextMenu={handleRightClick}
+      className=" h-screen flex flex-col items-center justify-center bg-black text-white font-slabo"
+    >
       <div className="bg-img w-screen h-screen flex items-end justify-around gap-96 pb-60">
         <Link
           to="/english"

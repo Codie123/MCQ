@@ -3,10 +3,15 @@ import { Link } from "react-router-dom";
 
 const EnglishQuiz = () => {
   const questionData = questionsData.questions;
-
+  const handleRightClick = (e) => {
+    e.preventDefault();
+  };
   return (
     <>
-      <div className="bg-II-img w-screen h-screen flex flex-col justify-center items-center gap-3  bg-white ">
+      <div
+        onContextMenu={handleRightClick}
+        className="bg-II-img w-screen h-screen flex flex-col justify-center items-center gap-3  bg-white "
+      >
         <h1 className="text-white font-extrabold text-9xl mb-6">
           Choose A Question
         </h1>

@@ -3,10 +3,13 @@ import { Link } from "react-router-dom";
 
 const ArabicQuiz = () => {
   const questionData = questionsData.questions;
-
+  const handleRightClick = (e) => {
+    e.preventDefault();
+  };
   return (
     <>
       <div
+        onContextMenu={handleRightClick}
         className="bg-II-img font-rubik w-screen h-screen flex flex-col justify-center items-center gap-3  bg-white "
         dir={"rtl"}
       >
