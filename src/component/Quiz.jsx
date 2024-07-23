@@ -126,17 +126,7 @@ const Quiz = () => {
               <form onSubmit={handleSubmit} className="flex flex-col gap-8">
                 {questionById.options_ar.map((x, index) => (
                   <div key={index}>
-                    <div
-                      className={`flex items-center ps-4  ${
-                        selectedOption === x && disabled && correctAnswer === x
-                          ? "bg-success text-white"
-                          : ""
-                      } ${
-                        selectedOption === x && disabled && correctAnswer !== x
-                          ? "bg-error text-white"
-                          : ""
-                      }`}
-                    >
+                    <div className={`flex items-center ps-4`}>
                       <input
                         name={`option-${id}`}
                         id={`option-${index}`}
