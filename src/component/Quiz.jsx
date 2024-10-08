@@ -1,6 +1,7 @@
 import { React, useState } from "react";
 import questionsData from "../data.json";
 import { useNavigate, useParams } from "react-router-dom";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const Quiz = () => {
   const { id } = useParams();
@@ -8,9 +9,8 @@ const Quiz = () => {
   const [disabled, setDisabled] = useState(false);
   const [message, setMessage] = useState("");
   const [messageType, setMessageType] = useState(""); // 'success' or 'error'
-  const [correctAnswer, setCorrectAnswer] = useState(null);
+
   const questionById = questionsData.questions[id];
-  const language = localStorage.getItem("lng");
 
   const navigate = useNavigate();
 
@@ -23,26 +23,21 @@ const Quiz = () => {
     setDisabled(true);
     let isCorrect = false;
 
-    if (language !== "arabic") {
-      isCorrect = questionById.answer_en === selectedOption;
-      setCorrectAnswer(questionById.answer_en);
-    } else {
-      isCorrect = questionById.answer_ar === selectedOption;
-      setCorrectAnswer(questionById.answer_ar);
-    }
+    isCorrect = questionById.answer === selectedOption;
 
     if (isCorrect) {
       setMessage("Correct! Well done.");
       setMessageType("success");
+
       setTimeout(() => {
         navigate("/");
-      }, 1500);
+      }, 1800);
     } else {
       setMessage("Incorrect! Try again.");
       setMessageType("error");
       setTimeout(() => {
         navigate("/");
-      }, 1500);
+      }, 1800);
     }
   };
   const handleRightClick = (e) => {
@@ -53,39 +48,37 @@ const Quiz = () => {
       <div
         onContextMenu={handleRightClick}
         className="wrapper bg-II-img w-screen h-screen flex flex-col justify-center items-center "
-        dir={language === "arabic" ? "rtl" : "ltr"}
       >
-        {language !== "arabic" ? (
-          <div className="container flex flex-col gap-16 max-w-screen-3xl justify-center items-stretch p-10 rounded-2xl backdrop-blur-2xl bg-white/30  shadow-2xl text-white">
-            <div className="question">
-              <h1 className="text-8xl font-semibold leading-relaxed ">
-                {questionById.question_en}
-              </h1>
-            </div>
+        <div className="container flex flex-col gap-16 max-w-screen-3xl justify-center items-stretch p-10 rounded-2xl backdrop-blur-2xl bg-white  shadow-2xl text-white">
+          <div className="question">
+            <h1 className="text-8xl font-semibold leading-relaxed text-darkBlue">
+              {questionById.question}
+            </h1>
+          </div>
 
-            <div className="answer-container mt-4 ">
-              <form onSubmit={handleSubmit} className="flex flex-col gap-8">
-                {questionById.optionsen.map((x, index) => (
-                  <div key={index}>
-                    <div className={`flex items-center ps-4 `}>
-                      <input
-                        name={`option-${id}`}
-                        id={`option-${index}`}
-                        disabled={disabled}
-                        type="radio"
-                        value={x}
-                        onChange={() => handleOptionChange(x)}
-                        required
-                        className="hidden peer"
-                      />
-                      <label
-                        htmlFor={`option-${index}`}
-                        className={`
+          <div className="answer-container mt-4 ">
+            <form onSubmit={handleSubmit} className="flex flex-col gap-8">
+              {questionById.options.map((x, index) => (
+                <div key={index}>
+                  <div className={`flex items-center ps-4 `}>
+                    <input
+                      name={`option-${id}`}
+                      id={`option-${index}`}
+                      disabled={disabled}
+                      type="radio"
+                      value={x}
+                      onChange={() => handleOptionChange(x)}
+                      required
+                      className="hidden peer"
+                    />
+                    <label
+                      htmlFor={`option-${index}`}
+                      className={`
                            w-full
                            tracking-normal
                             py-8 px-8 ms-2
                              text-7xl
-                              text-black
+                              text-darkBlue
                                font-thin
                                 cursor-pointer 
                                 border-2 
@@ -95,85 +88,27 @@ const Quiz = () => {
                                 peer-checked:border-transparent
                                 peer-checked:text-white
                                 peer-checked:bg-cyan_cuz
-                                hover:text-black 
+                                hover:text-white
                                 hover:bg-cyan_cuz 
+                                hover:border-tintgreen40
                          `}
-                      >
-                        {x}
-                      </label>
-                    </div>
+                    >
+                      {x}
+                    </label>
                   </div>
-                ))}
+                </div>
+              ))}
 
-                <button
-                  type="submit"
-                  className="mt-16 px-8 py-8 uppercase  text-7xl font-medium text-white bg-slate-950 hover:bg-slate-800 disabled:cursor-not-allowed disabled:bg-slate-800 focus:outline   rounded-lg text-center  "
-                  disabled={disabled}
-                >
-                  Submit
-                </button>
-              </form>
-            </div>
+              <button
+                type="submit"
+                className="mt-16 px-8 py-8 uppercase  text-7xl font-medium text-white bg-darkBlue hover:bg-tintgreen80 disabled:cursor-not-allowed disabled:bg-slate-800 focus:outline   rounded-lg text-center  "
+                disabled={disabled}
+              >
+                Submit
+              </button>
+            </form>
           </div>
-        ) : (
-          <div className="container flex flex-col gap-16 max-w-screen-3xl justify-center items-stretch p-10 rounded-2xl backdrop-blur-2xl bg-white/30  shadow-2xl text-white">
-            <div className="question">
-              <h1 className="text-8xl font-semibold leading-relaxed">
-                {questionById.question_ar}
-              </h1>
-            </div>
-            <div className="answer-container mt-4 ">
-              <form onSubmit={handleSubmit} className="flex flex-col gap-8">
-                {questionById.options_ar.map((x, index) => (
-                  <div key={index}>
-                    <div className={`flex items-center ps-4`}>
-                      <input
-                        name={`option-${id}`}
-                        id={`option-${index}`}
-                        disabled={disabled}
-                        type="radio"
-                        value={x}
-                        onChange={() => handleOptionChange(x)}
-                        required
-                        className="hidden peer"
-                      />
-                      <label
-                        htmlFor={`option-${index}`}
-                        className={`
-                           w-full
-                           tracking-normal
-                            py-8 px-8 ms-2
-                             text-7xl
-                              text-black
-                               font-thin
-                                cursor-pointer 
-                                border-2
-                                border-gray-950
-                                rounded-lg
-                                bg-white 
-                                peer-checked:border-transparent
-                                peer-checked:text-white
-                                peer-checked:bg-cyan_cuz
-                                hover:text-black 
-                                hover:bg-cyan_cuz 
-                        `}
-                      >
-                        {x}
-                      </label>
-                    </div>
-                  </div>
-                ))}
-                <button
-                  type="submit"
-                  className="mt-16 px-8 py-8 uppercase  text-7xl font-medium text-white bg-slate-950 hover:bg-slate-800 disabled:cursor-not-allowed disabled:bg-slate-800 focus:outline   rounded-lg text-center   "
-                  disabled={disabled}
-                >
-                  Submit
-                </button>
-              </form>
-            </div>
-          </div>
-        )}
+        </div>
 
         {message && (
           <div className=" absolute backdrop-blur-xl bg-white/40 w-screen h-fit flex flex-col items-center justify-center h-screen">
@@ -183,6 +118,16 @@ const Quiz = () => {
               } text-white`}
             >
               {messageType === "success" ? (
+                <DotLottieReact
+                  src="/success_animation.lottie
+                  "
+                  autoplay
+                />
+              ) : (
+                <DotLottieReact src="/error_animation.lottie" loop autoplay />
+              )}
+
+              {/* {messageType === "success" ? (
                 <svg
                   version="1.1"
                   id="Layer_1"
@@ -257,7 +202,7 @@ s0.4,2.5,1.2,3.3l35.4,35.8c1.1,1.1,2.3,1.6,3.7,1.6c1.4,0,2.5-0.5,3.3-1.6L208.4,1
                     y2="92.2"
                   />
                 </svg>
-              )}
+              )} */}
             </div>
           </div>
         )}

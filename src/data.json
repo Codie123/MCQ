@@ -1,214 +1,214 @@
 {
   "questions": [
     {
-      "id": "Question 1",
-      "id_ar": "السؤال رقم ١",
-      "question_en": "On which date is International Security Officers Day celebrated?",
-      "question_ar": "في أي يوم يتم الاحتفال باليوم العالمي لضباط الأمن؟",
-      "optionsen": [
-        "A) 21st of July",
-        "B) 24th of July",
-        "C) 23rd of July",
-        "D) 22nd of July"
-      ],
-      "options_ar": [
-        "أ) 21 يوليو",
-        "ب) 24 يوليو",
-        "ج) 23 يوليو",
-        "د) 22 يوليو"
-      ],
-      "answer_en": "B) 24th of July",
-      "answer_ar": "ب) 24 يوليو"
+      "id": "question1",
+      "question": "What percentage of employees report experiencing mental health issues at work?",
+      "options": ["A) 10%", "B) 25%", "C) 50%", "D) 75%"],
+      "answer": "B) 25%"
     },
     {
-      "id": "Question 2",
-      "id_ar": "السؤال رقم ٢",
-      "question_en": "What is the PRIMARY responsibility of a security officer?",
-      "question_ar": "ما هي المسؤولية الأساسية لضابط الأمن؟",
-      "optionsen": [
-        "A) Issuing violation tickets to violators on JHAH premises",
-        "B) Maintaining a safe and secure environment",
-        "C) Monitoring CCTV",
-        "D) All of the above"
+      "id": "question2",
+      "question": "Which of the following is a sign of good mental health?",
+      "options": [
+        "A) Feeling overwhelmed regularly",
+        "B) Difficulty concentrating",
+        "C) Building positive relationships",
+        "D) Increasing absenteeism"
       ],
-      "options_ar": [
-        "أ) إصدار مخالفات للمخالفين في مباني مركز جونز هوبكنز أرامكو الطبي",
-        "ب) الحفاظ على بيئة آمنة ومأمونة",
-        "ج) مراقبة كاميرات المراقبة",
-        "د. كل ما ورد اعلاه"
-      ],
-      "answer_en": "D) All of the above",
-      "answer_ar": "د. كل ما ورد اعلاه"
+      "answer": "C) Building positive relationships"
     },
     {
-      "id": "Question 3",
-      "id_ar": "السؤال رقم ٣",
-      "question_en": "What is one key advantage of using CCTV systems?",
-      "question_ar": "ما هي الميزة الرئيسية لاستخدام أنظمة المراقبة بالكاميرات ؟",
-      "optionsen": [
-        "A) They replace the need for security personnel",
-        "B) They provide real-time monitoring and recorded evidence",
-        "C) They are used primarily for entertainment",
-        "D) They require no maintenance"
+      "id": "question3",
+      "question": "What is a common barrier to seeking help for mental health issues at work?",
+      "options": [
+        "A) Availability of resources",
+        "B) Stigma surrounding mental health",
+        "C) Supportive colleagues",
+        "D) Flexible working hours"
       ],
-      "options_ar": [
-        "أ) الاستغناء عن الحاجة إلى رجال الأمن",
-        "ب) تزود رجال الأمن بالمراقبة الحية والأدلة المسجلة",
-        "ج) يتم استخدامها في المقام الأول للترفيه",
-        "د) لا تحتاج إلى صيانة"
+      "answer": "B) Stigma surrounding mental health"
+    },
+    {
+      "id": "question4",
+      "question": "Which strategy is NOT effective for managing stress at work?",
+      "options": [
+        "A) Taking regular breaks",
+        "B) Prioritizing tasks",
+        "C) Ignoring your feelings",
+        "D) Practicing mindfulness"
       ],
-      "answer_en": "B) They provide real-time monitoring and recorded evidence",
-      "answer_ar": "ب) تزود رجال الأمن بالمراقبة الحية والأدلة المسجلة"
+      "answer": "C) Ignoring your feelings"
     },
     {
-      "id": "Question 4",
-      "id_ar": "السؤال رقم ٤",
-      "question_en": "What is the primary purpose of a security foot patrol?",
-      "question_ar": "ما هو الغرض الأساسي من الدورية الأمنية ؟",
-      "optionsen": [
-        "A) To get exercise",
-        "B) To interact with the public",
-        "C) To deter and detect suspicious activities",
-        "D) To supervise maintenance staff"
+      "id": "question5",
+      "question": "What is a mental health day?",
+      "options": [
+        "A) A day taken off work to rest and recharge mentally",
+        "B) A day focused on physical health activities",
+        "C) A mandatory day off for all employees",
+        "D) A day for team-building activities"
       ],
-      "options_ar": [
-        "أ) ممارسة الرياضة",
-        "ب) التفاعل مع الجمهور",
-        "ج) ردع وكشف الأنشطة المشبوهة",
-        "د) الإشراف على موظفي الصيانة"
+      "answer": "A) A day taken off work to rest and recharge mentally"
+    },
+    {
+      "id": "question6",
+      "question": "How can managers best support employees' mental health?",
+      "options": [
+        "A) Creating a competitive environment",
+        "B) Encouraging open communication",
+        "C) Ignoring mental health concerns",
+        "D) Setting unrealistic deadlines"
       ],
-      "answer_en": "C) To deter and detect suspicious activities",
-      "answer_ar": "ج) ردع وكشف الأنشطة المشبوهة"
+      "answer": "B) Encouraging open communication"
     },
     {
-      "id": "Question 5",
-      "id_ar": "السؤال رقم ٥",
-      "question_en": "How many designated smoking areas are within the JHAH premises?",
-      "question_ar": "ما هو عدد المناطق المخصصة للتدخين الموجودة داخل مباني مركز جونز هوبكنز أرامكو الطبي؟",
-      "optionsen": [
-        "A) Six designated smoking areas",
-        "B) Two designated smoking areas",
-        "C) Three designated smoking areas",
-        "D) Five designated smoking areas"
+      "id": "question7",
+      "question": "Which of the following is a common mental health issue in the workplace?",
+      "options": ["A) Diabetes", "B) Anxiety", "C) Hypertension", "D) Asthma"],
+      "answer": "B) Anxiety"
+    },
+    {
+      "id": "question8",
+      "question": "What should you do if you notice a colleague showing signs of mental distress?",
+      "options": [
+        "A) Ignore it; it's not your business",
+        "B) Confront them publicly",
+        "C) Offer to listen and suggest they seek help",
+        "D) Report them to HR immediately"
       ],
-      "options_ar": [
-        "أ) ستة مناطق مخصصة للتدخين",
-        "ب) منطقتان مخصصتان للتدخين",
-        "ج) ثلاث مناطق مخصصة للتدخين",
-        "د) خمس مناطق مخصصة للتدخين"
+      "answer": "C) Offer to listen and suggest they seek help"
+    },
+    {
+      "id": "question9",
+      "question": "Why is work-life balance important for mental health?",
+      "options": [
+        "A) It increases workload",
+        "B) It helps prevent burnout and stress",
+        "C) It makes work more difficult",
+        "D) It reduces productivity"
       ],
-      "answer_en": "A) Six designated smoking areas",
-      "answer_ar": "أ) ستة مناطق مخصصة للتدخين"
+      "answer": "B) It helps prevent burnout and stress"
     },
     {
-      "id": "Question 6",
-      "id_ar": "السؤال رقم ٦",
-      "question_en": "Who is responsible for reporting safety hazards within the JHAH hospital?",
-      "question_ar": "من المسؤول عن الإبلاغ عن مخاطر السلامة داخل مركز جونز هوبكنز أرامكو الطبي ؟",
-      "optionsen": [
-        "A) Security",
-        "B) Patient",
-        "C) Visitor",
-        "D) All JHAH staff"
+      "id": "question10",
+      "question": "Which of the following is a proactive way to maintain mental health at work?",
+      "options": [
+        "A) Working overtime consistently",
+        "B) Engaging in regular physical activity",
+        "C) Avoiding social interactions",
+        "D) Procrastinating on tasks"
       ],
-      "options_ar": [
-        "أ) الأمن",
-        "ب) المريض",
-        "ج) الزوار",
-        "د) جميع موظفي مركز جونز هوبكنز أرامكو الطبي"
+      "answer": "B) Engaging in regular physical activity"
+    },
+    {
+      "id": "question11",
+      "question": "If mental health were a superhero which of the following powers would it have?",
+      "options": [
+        "A) Invisibility (to avoid stress)",
+        "B) Super empathy (to understand others)",
+        "C) Time travel (to rewind stressful moments)",
+        "D) Flight (to escape deadlines)"
       ],
-      "answer_en": "D) All JHAH staff",
-      "answer_ar": "د) جميع موظفي مركز جونز هوبكنز أرامكو الطبي"
+      "answer": "B) Super empathy (to understand others)"
     },
     {
-      "id": "Question 7",
-      "id_ar": "السؤال رقم ٧",
-      "question_en": "JHAH staff are not allowed to park in?",
-      "question_ar": "لا يُسمح لموظفي مركز جونز هوبكنز أرامكو الطبي بركن سياراتهم؟",
-      "optionsen": [
-        "A) Staff Parking",
-        "B) Patient parking",
-        "C) Unauthorized parking",
-        "D) B and C"
+      "id": "question12",
+      "question": "What’s the best way to recharge your mental batteries at work?",
+      "options": [
+        "A) A coffee IV drip",
+        "B) A dance party in the break room",
+        "C) Taking a mindful walk outside",
+        "D) Binge-watching your favorite show during lunch"
       ],
-      "options_ar": [
-        "أ) مواقف الموظفين",
-        "ب) مواقف المرضى",
-        "ج) وقوف السيارات غير المصرح به",
-        "د) )ب( و )ج"
+      "answer": "C) Taking a mindful walk outside"
+    },
+    {
+      "id": "question13",
+      "question": "Which of these is the ultimate stress-buster at work?",
+      "options": [
+        "A) A surprise pizza party",
+        "B) Power napping with an eye mask",
+        "C) A motivational quote wall",
+        "D) A group hug session"
       ],
-      "answer_en": "D) B and C",
-      "answer_ar": "د) )ب( و )ج"
+      "answer": "A) A surprise pizza party (but all options could help!)"
     },
     {
-      "id": "Question 8",
-      "id_ar": "السؤال رقم ٨",
-      "question_en": "All JHAH staff are required to wear JHAH ID at all times while on duty?",
-      "question_ar": "هل يتعين على جميع موظفي المستشفى ارتداء بطاقة مركز جونز هوبكنز أرامكو الطبي في جميع الأوقات أثناء العمل؟",
-      "optionsen": ["A) True", "B) False"],
-      "options_ar": ["أ ) صح", "ب) خطأ"],
-      "answer_en": "A) True",
-      "answer_ar": "أ ) صح"
+      "id": "question14",
+      "question": "If you could create a 'Mental Health Potion' what would be its main ingredient?",
+      "options": [
+        "A) Laughter (to lighten the mood)",
+        "B) Chocolate (for comfort)",
+        "C) Sunshine (for positivity)",
+        "D) Music (for relaxation)"
+      ],
+      "answer": "All options are great ingredients for a mental health potion!"
     },
     {
-      "id": "Question 9",
-      "id_ar": "السؤال رقم ٩",
-      "question_en": "You are allowed to take photos or record videos on the JHAH premises without security permission?",
-      "question_ar": "يسمح لك بالتقاط الصور أو تسجيل مقاطع الفيديو في مقر مركز جونز هوبكنز أرامكو الطبي دون الحصول على إذن أمني؟",
-      "optionsen": ["A) True", "B) False"],
-      "options_ar": ["أ ) صح", "ب) خطأ"],
-      "answer_en": "B) False",
-      "answer_ar": "ب) خطأ"
+      "id": "question15",
+      "question": "What’s the best way to show a colleague you care about their mental health?",
+      "options": [
+        "A) Send them a meme that makes them laugh",
+        "B) Leave a mysterious note on their desk",
+        "C) Organize a fun team-building activity",
+        "D) Ask them how they’re doing and listen"
+      ],
+      "answer": "D) Ask them how they’re doing and listen (but all options spread positivity!)"
     },
     {
-      "id": "Question 10",
-      "id_ar": "السؤال رقم ١٠",
-      "question_en": "Smoking is allowed on the JHAH premises?",
-      "question_ar": "يُسمح بالتدخين في مقر مركز جونز هوبكنز أرامكو الطبي ؟",
-      "optionsen": ["A) True", "B) False"],
-      "options_ar": ["أ ) صح", "ب) خطأ"],
-      "answer_en": "B) False",
-      "answer_ar": "ب) خطأ"
+      "id": "question16",
+      "question": "If 'taking a break' were a dance move what would it be called?",
+      "options": [
+        "A) The Chill Shuffle",
+        "B) The Relaxation Twist",
+        "C) The Mindful Moonwalk",
+        "D) The Stress-Free Spin"
+      ],
+      "answer": "Any of these could be the perfect name for a break dance!"
     },
     {
-      "id": "Question 11",
-      "id_ar": "السؤال رقم ١١",
-      "question_en": "Security officers have the authority to issue parking violations for vehicles in unauthorized areas?",
-      "question_ar": "يحق لرجال الأمن إصدار مخالفات  لوقوف المركبات في المناطق غير المسموح بها؟",
-      "optionsen": ["A) True", "B) False"],
-      "options_ar": ["أ ) صح", "ب) خطأ"],
-      "answer_en": "A) True",
-      "answer_ar": "أ ) صح"
+      "id": "question17",
+      "question": "What’s the ultimate 'mental health snack' for a workday?",
+      "options": [
+        "A) A crunchy carrot (for clarity)",
+        "B) Dark chocolate (for happiness)",
+        "C) A smoothie (for energy)",
+        "D) Popcorn (for fun)"
+      ],
+      "answer": "All options are tasty and beneficial!"
     },
     {
-      "id": "Question 12",
-      "id_ar": "السؤال رقم ١٢",
-      "question_en": "Emergency exits should be kept locked at all times to prevent unauthorized access?",
-      "question_ar": " يجب أن تظل مخارج الطوارئ مغلقة في جميع الأوقات لمنع دخول غير المصرح به؟",
-      "optionsen": ["A) True", "B) False"],
-      "options_ar": ["أ ) صح", "ب) خطأ"],
-      "answer_en": "A) True",
-      "answer_ar": "أ ) صح"
+      "id": "question18",
+      "question": "If you were to give a 'Mental Health Award' who would you give it to?",
+      "options": [
+        "A) The colleague who always brings snacks",
+        "B) The one who organizes team outings",
+        "C) The person who checks in on you",
+        "D) All of the above!"
+      ],
+      "answer": "D) All of the above!"
     },
     {
-      "id": "Question 13",
-      "id_ar": "السؤال رقم ١٣",
-      "question_en": "It is acceptable for staff to share their JHAH ID with colleagues?",
-      "question_ar": "من المقبول أن يقوم الموظفون بمشاركة بطاقة مركز جونز هوبكنز أرامكو الطبي الخاصة بهم مع زملائهم؟",
-      "optionsen": ["A) True", "B) False"],
-      "options_ar": ["أ ) صح", "ب) خطأ"],
-      "answer_en": "B) False",
-      "answer_ar": "ب) خطأ"
+      "id": "question19",
+      "question": "Which 'Mental Health Superfood' would you choose for a boost?",
+      "options": [
+        "A) Avocado (for creamy comfort)",
+        "B) Blueberries (for brain power)",
+        "C) Nuts (for healthy energy)",
+        "D) All of the above!"
+      ],
+      "answer": "D) All of the above!"
     },
     {
-      "id": "Question 14",
-      "id_ar": "السؤال رقم ١٤",
-      "question_en": "Staff must immediately report any lost or stolen JHAH ID to the security?",
-      "question_ar": "يجب على الموظفين الإبلاغ فورًا عن أي بطاقة مركز جونز هوبكنز أرامكو الطبي مفقودة أو مسروقة إلى الأمن؟",
-      "optionsen": ["A) True", "B) False"],
-      "options_ar": ["أ ) صح", "ب) خطأ"],
-      "answer_en": "A) True",
-      "answer_ar": "أ ) صح"
+      "id": "question20",
+      "question": "If mental health were a vacation destination where would it be?",
+      "options": [
+        "A) A tropical beach (for relaxation)",
+        "B) A cozy cabin in the woods (for tranquility)",
+        "C) A bustling city (for excitement)",
+        "D) A serene mountain top (for peace)"
+      ],
+      "answer": "All options represent a great way to refresh mental health!"
     }
   ]
 }

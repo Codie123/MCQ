@@ -20,6 +20,11 @@ export default {
         rubik: ["Rubik"],
       },
       backgroundColor: {
+        tintgreen: "#009283",
+        tintgreen80: "hsl(174deg 100% 27% / 80%)",
+        tintgreen60: "hsl(174deg 100% 27% / 60%)",
+        tintgreen40: "hsl(174deg 100% 27% / 40%)",
+        tintgreen20: "hsl(174deg 100% 27% / 20%)",
         darkBlue: "#2b3968",
         glass: "#ffffff45",
         cyan_cuz: "#89bbbc",
@@ -28,6 +33,11 @@ export default {
       },
       borderColor: {
         darkBlue: "#2b3968",
+        tintgreen: "#009283",
+        tintgreen80: "hsl(174deg 100% 27% / 80%)",
+        tintgreen60: "hsl(174deg 100% 27% / 60%)",
+        tintgreen40: "hsl(174deg 100% 27% / 40%)",
+        tintgreen20: "hsl(174deg 100% 27% / 20%)",
       },
       textColor: {
         darkBlue: "#2b3968",

@@ -12,22 +12,15 @@ const Home = () => {
   return (
     <main
       onContextMenu={handleRightClick}
-      className=" h-screen flex flex-col items-center justify-center bg-black text-white font-slabo"
+      className=" h-screen flex flex-col items-center justify-center bg-white text-white font-slabo"
     >
-      <div className="bg-img w-screen h-screen flex items-end justify-around gap-96 pb-60">
+      <div className="bg-img w-screen h-screen flex items-end justify-end pr-24 gap-96 pb-60">
         <Link
-          to="/english"
-          className="backdrop-blur-xl bg-white  rounded-3xl font-light text-9xl text-black cursor-pointer py-12 px-20   hover:bg-white/30"
+          to="/start"
+          className="backdrop-blur-xl bg-transparent border-2 border-tintgreen rounded-3xl font-light text-9xl text-white cursor-pointer py-12 px-20 hover:bg-tintgreen  animate-pulse hover:animate-none "
           onClick={() => handleClick("english")}
         >
-          English
-        </Link>
-        <Link
-          to="/arabic"
-          className="backdrop-blur-xl bg-white rounded-3xl font-light text-9xl text-black cursor-pointer py-12 px-20   hover:bg-white/30"
-          onClick={() => handleClick("arabic")}
-        >
-          عربي
+          Take The Quiz
         </Link>
       </div>
 
